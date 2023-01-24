@@ -1,0 +1,17 @@
+
+
+
+
+#description {
+    margin: auto;
+    text-align:center;
+    /* display: flex; */
+}
+
+#tasty {
+    color: #6495ED;
+}
+
+#yucky {
+    color: #ED7864;
+}

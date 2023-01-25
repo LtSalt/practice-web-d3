@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Multiple stacked barcharts</title>
+</head>
+<body>
+    <div id="user-input">
+        <h1>% of </h1>
+        <div id="buttons">
+            <button id="quality" class="fairtrade active">fairtrade</button>
+            <button id="price" class="affordable">affordable</button>
+        </div>
+        <h1>products in nearby discounters</h1>
+    </div>
+    <section id="barcharts">
+        <div id="now"></div>
+        <div id="before"></div>
+    </section>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/arquero@latest"></script>
+    <script src="index.js"></script>
+</body>
+</html>

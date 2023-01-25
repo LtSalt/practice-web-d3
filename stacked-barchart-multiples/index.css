@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+:root {
+    --bg-color-primary: white;
+    --color-fairtrade: #59A14FFF;
+    --color-affordable: #4E79A7FF;
+    --color-dark-background: white;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Abel', sans-serif;
+    font-size: 0.8rem;
+    height: 100vh;
+    min-width: 400px;
+
+}
+
+#user-input {
+    margin: 12px 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.3rem;
+    margin: 16px 0;
+    letter-spacing: 0.11em;
+    text-align: center;
+}
+
+#buttons {
+    display: flex;
+    gap: 0.7rem;
+}
+
+button {
+    background-color: var(--bg-color-primary);
+    font-size: 1.8rem;
+    border: none;
+    border-radius: 8px;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+.affordable {
+    color: var(--color-affordable);
+}
+
+.fairtrade {
+    color: var(--color-fairtrade);
+}
+
+.active {
+    color: var(--color-dark-background);
+    cursor: default;
+}
+
+.fairtrade.active {
+    background-color: var(--color-fairtrade);
+}
+
+.affordable.active {
+    background-color: var(--color-affordable)
+}
+
+#barcharts {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+rect {
+    stroke: var(--bg-color-primary);
+    fill-opacity: 0.3;
+}
+
+text {
+    font-size: 1.4rem;
+    fill: var(--color-dark-background);
+    text-anchor: middle;
+    /* z-index: -99; */
+}
+
+.highlight {
+    fill-opacity: 1;
+}
+
+.mainBars, .labels {
+    cursor: pointer;
+}

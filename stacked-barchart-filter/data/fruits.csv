@@ -1,0 +1,11 @@
+id,fruit,flavor,cost
+1,apple,tasty,expensive
+2,apple,yucky,expensive
+3,orange,tasty,expensive
+4,orange,tasty,expensive
+5,orange,yucky,expensive
+6,banana,yucky,expensive
+7,banana,tasty,reasonable
+8,banana,tasty,reasonable
+9,banana,tasty,reasonable
+10,orange,tasty,reasonable

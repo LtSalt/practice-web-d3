@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Stacked Bars, Filtered</title>
+</head>
+<body>
+    <h1 id="description">% of your food that is</h1>
+    <fieldset id="toggles">
+        <div>
+            <input id="flavor" name="filter" type="radio" value="flavor" checked>
+            <label for="flavor" class="toggle active" id="toggle-flavor">tasty</label>
+        </div>
+        <div>
+            <input id="cost" type="radio" name="filter" value="cost">
+            <label for="cost" class="toggle" id="toggle-cost">expensive</label>
+        </div>
+    </fieldset>
+    </div>
+    <div id="svg-container"></div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/arquero@latest"></script>
+    <script src="index.js"></script>
+</body>
+</html>

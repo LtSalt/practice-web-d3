@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
+
+:root {
+    --bg-primary: white;
+    --color-primary: black;
+    --color-secondary: white;
+    --color-accent: white;
+    --color-flavor: #4E79A7FF;
+    --color-cost: #499894FF;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#description {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px
+}
+
+#toggles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin: 10px 0 30px;
+    gap: 8px;
+}
+
+input[type='radio'] {
+    visibility: collapse;
+    z-index: 9;
+}
+
+.toggle {
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 0.1rem 0.3rem;
+    z-index:-99;
+
+}
+
+#toggle-flavor {
+    color: var(--color-flavor);
+}
+
+#toggle-cost {
+    color: var(--color-cost);
+}
+
+#toggle-flavor.active {
+    background-color: var(--color-flavor);
+    color: var(--color-accent)
+}
+#toggle-cost.active {
+    background-color: var(--color-cost);
+    color: var(--color-accent)
+}
+
+/* --- CANVAS --- */
+
+#svg-container {
+    /* width: 600px; */
+    display: flex;
+    justify-content: center;
+}
+
+.canvas {
+    border: 1px solid white;
+    border-radius: 12px;
+}
+
+rect {
+    stroke: var(--bg-primary);
+}

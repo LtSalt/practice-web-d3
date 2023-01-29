@@ -19,7 +19,6 @@ body {
     font-size: 0.8rem;
     height: 100vh;
     min-width: 400px;
-
 }
 
 #user-input {
@@ -38,7 +37,7 @@ h1 {
 }
 
 #buttons {
-    display: flex;
+    /* display: flex; */
     gap: 0.7rem;
 }
 
@@ -81,14 +80,13 @@ button {
 
 rect {
     stroke: var(--bg-color-primary);
-    fill-opacity: 0.3;
+    /* fill-opacity: 0.3; */
 }
 
 text {
     font-size: 1.4rem;
     fill: var(--color-dark-background);
     text-anchor: middle;
-    /* z-index: -99; */
 }
 
 .highlight {
